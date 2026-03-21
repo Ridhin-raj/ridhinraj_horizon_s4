@@ -56,6 +56,20 @@ double Distance(double x1, double x2, double y1, double y2){
    if(x1 == x2 && y1 == y2)
    return 0;
 
+//    horizontal movement only
+   if( x1 == x2 )
+   {
+    return sqrt(pow( y2 - y1, 2));
+
+   }
+
+//    vertical movement only 
+   if ( y1 == y2)
+   {
+    return sqrt(pow( x2 - x1, 2));
+
+   }
+
 
 
 
