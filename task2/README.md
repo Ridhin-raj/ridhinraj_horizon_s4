@@ -29,6 +29,7 @@ For Hardware:
 
 # Schematic & Circuit
 
+Circuit diagram is in circuit name file
 
 
 
