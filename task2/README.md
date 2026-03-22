@@ -29,8 +29,7 @@ For Hardware:
 
 # Schematic & Circuit
 
-Circuit diagram is in circuit name file
-
+![1774194069132.png](https://github.com/user-attachments/assets/d8fc305f-82bd-4c26-a20c-673e38d87572)
 
 
 ### Project Demo
