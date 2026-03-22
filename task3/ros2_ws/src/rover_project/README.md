@@ -22,13 +22,13 @@ This project demonistrates communication between two ROC2 nodes using the Publis
 - Python (rclpy library)
 - Ubuntu 22.04
 
-### Implementation
+## Implementation
 For Software:
-# Installation
+### Installation
 - Ubuntu 22.04
 - ROS2 Humble
 
-# Run
+## Run
 
 navigate to workspace
 - cd /task3/ros2_ws
@@ -47,22 +47,20 @@ Run Subscriberr Node (terminal 2)
 - source install/setup.bash
 - ros2 run rover_project subscriber
 
-### Project Expected Output
+# Project Output
 
-# Screenshots 
+## Screenshots 
+### Publisher Node
+
+<img width="651" height="731" alt="Screenshot from 2026-03-22 22-57-29" src="https://github.com/user-attachments/assets/b976a8ed-9dce-4ae5-8a46-355548d307d7" />
+
+### Subscriber Node
+
+<img width="696" height="733" alt="Screenshot from 2026-03-22 22-57-56" src="https://github.com/user-attachments/assets/36a01110-e413-4d4c-bb56-1beff74d7bdf" />
 
 
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
 ---
-Made with ❤️ at TinkerHub Useless Projects 
+Made for Horizon CUSAT recruitment  
