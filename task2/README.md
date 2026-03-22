@@ -29,7 +29,8 @@ For Hardware:
 
 # Schematic & Circuit
 
-![1774194069132.png](https://github.com/user-attachments/assets/d8fc305f-82bd-4c26-a20c-673e38d87572)
+<img width="871" height="538" alt="Screenshot from 2026-03-22 16-00-05" src="https://github.com/user-attachments/assets/1228a15b-792e-413c-911d-df225fb852dd" />
+
 
 
 ### Project Demo
