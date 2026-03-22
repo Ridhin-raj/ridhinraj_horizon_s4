@@ -83,7 +83,18 @@ double CalculateDistance(double x1, double x2, double y1, double y2){
 
 double CalculateTime(double distance, double u, double a, double vmax){
     double time = 0;
-    
+
+
+    if(a == 0 ){
+        if (u > 0)
+        {
+            return (distance / u);
+        }
+        else{
+            cout << "Error: no movement possible ";
+            return 1;
+        }
+    }
     /*
     case 1: distance is short, no reach max speed
     case 2 : distance is  long. reach max speed 
@@ -110,6 +121,8 @@ double CalculateTime(double distance, double u, double a, double vmax){
     */ 
 
     double distance1 = ( u * t1 ) + ( 0.5 * a * t1 * t1 );
+
+    
 
     // rover never reach max speed
 
@@ -142,23 +155,83 @@ int main(){
     double u, a, vmax;
 
     cout << "Enter origin coordinates (x1, y1)"<<endl;
-    cin >> x1 >> y1;
+
+    // input validation only allow number
+     while (!(cin >> x1)){
+        cout << "invalid input please enter a number"<<endl;
+
+        cin.clear();
+        cin.ignore();
+     }
+
+     while (!(cin >> y1)){
+        cout << "invalid input please enter a number";
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+     }
 
     cout << "Enter destination coordinates (x2, y2)"<<endl;
-    cin >> x2 >> y2;
 
-    cout << "Enter initial velocity :";
-    cin>> u;
+    // input validation only allow number 
+    while (!(cin >> x2)){
+        cout << "invalid input please enter a number";
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+     }
+    while (!(cin >> y2)){
+        cout << "invalid input please enter a number";
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+     }
+    double distance = CalculateDistance(x1, x2, y1, y2);
+
+    if (distance == 0){
+        cout<< "no movement: distance = 0 ";
+
+        return  1;
+    }
+
+    cout << "Enter initial velocity :"<<endl;
+
+    
+    // input validation only allow number
+    while (!(cin >> u))
+    {
+        cout << "invalid input please enter a number"<<endl;
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+    }
+    
 
     cout << "Enter final veloctiy : ";
-    cin >> vmax;
+    // input validation only allow number
+    while (!(cin >> vmax))
+    {
+        cout << "invalid input please enter a number"<<endl;
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+    }
 
     cout << "Enter the acceleration : ";
-    cin >> a;
+    // input validation only allow number
+    while (!(cin >> a))
+    {
+        cout << "invalid input please enter a number"<<endl;
+
+        cin.clear();
+        cin.ignore(1000, '\n');
+    }
 
     
 
-    double distance = CalculateDistance(x1, x2, y1, y2);
+    
+
+    
 
     double time = CalculateTime(distance, u, a, vmax);
 
